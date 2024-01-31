@@ -9,7 +9,6 @@ Give your pipelines super powers with Meshery's GitHub Actions.
 ## Design Prologue
 MeshMap Snapshot is a screenshot service provided via MeshMap for the design or Application user is interested in. It Enables users to visualize the changes being done in the code-base rapidly over each PR and inform the user about any potential changesin their infrastructure. It doesn't need any configuration or setup neither any deployment by the client rather a simple one time setup is able to provide a long time value.
 
-
 ## Functional/Sequence Diagram
 For Github Workflows:
 ![sequence-diag](.github/readme/images/meshmap-snapshot.png)
