@@ -10,7 +10,7 @@ MESHERY_PATTERN_FILE=$(pattern_file=$(cat __intermediate_file.yml) node ./action
 # # convert to uri-encoded str
 UPLOAD_TYPE=$(printf %s "$UPLOAD_TYPE" | jq -sRr @uri)
 
-curl "$MESHERY_SERVER_BASE_URL/api/pattern/$UPLOAD_TYPE" \
+curl "https://sturdy-eureka-w4x6qv49rr4h96r4-32927.app.github.dev/api/pattern/$UPLOAD_TYPE" \
   -H 'Accept: */*' \
   -H 'Connection: close' \
   -H 'Content-Type: text/plain;charset=UTF-8' \
