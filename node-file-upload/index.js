@@ -17,11 +17,10 @@ function convertFileToBase64(filePath) {
   }
 }
 
+console.log(__dirname);
 const dirPath = path.join(
   __dirname,
   "..",
-  "cypress-action",
-  "cypress",
   "screenshots",
   "loadDesign.js"
 );
@@ -41,7 +40,7 @@ fs.readdirSync(dirPath).forEach((fileName, index) => {
       process.env.assetLocation[index].concat(fileName)
     );
   }
-
+  console.log("TEST :::::::::", fileName);
   const url =
     "https://staging-meshery.layer5.io/api/integrations/github/meta/artifacts";
 
