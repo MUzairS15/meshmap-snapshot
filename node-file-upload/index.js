@@ -22,7 +22,8 @@ const dirPath = path.join(
   "..",
   "cypress-action",
   "cypress",
-  "screenshots"
+  "screenshots",
+  "loadDesign.js"
 );
 
 fs.readdirSync(dirPath).forEach((fileName, index) => {
