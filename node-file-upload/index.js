@@ -21,6 +21,8 @@ console.log(__dirname);
 const dirPath = path.join(
   __dirname,
   "..",
+    "cypress-action",
+  "cypress",
   "screenshots",
   "loadDesign.js"
 );
